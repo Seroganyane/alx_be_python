@@ -1,6 +1,6 @@
 # This program calculates your age in a future year
 # Get the current age from the user
-age = int(input("Enter your current age: "))
+age = int(input("How old are you? "))
 
 # Get the future year from the user (assuming the current year is 2023)
 print("in 2050,you will be ",age +27,"years old")
