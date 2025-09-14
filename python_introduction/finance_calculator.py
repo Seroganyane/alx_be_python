@@ -1,9 +1,9 @@
 # This program calculates monthly savings and projects annual savings with interest
 #Input monthly income and expenses
 monthly_income = float(input("Enter your monthly income: "))
-total_monthly_expenses = float(input("Enter your total monthly expenses: "))
+monthly_expenses = float(input("Enter your total monthly expenses: "))
 #monthly savings calculation
-monthly_savings = monthly_income - total_monthly_expenses
+monthly_savings = monthly_income - monthly_expenses
 # Projected annual savings with 5% interest
 projected_savings = monthly_savings * 12 + (monthly_savings  * 12 * 0.05)
 #Display the results
