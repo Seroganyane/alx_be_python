@@ -4,6 +4,8 @@ def display_menu():
     print("2. Remove Item")
     print("3. View List")
     print("4. Exit")
+
+
 def main():
     shopping_list = []
     while True:
@@ -26,5 +28,7 @@ def main():
             break
         else:
             print("Invalid choice. Please try again")
+
+
 if __name__ == "__main__":
-    main()            
+    main()
