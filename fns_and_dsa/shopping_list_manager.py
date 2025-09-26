@@ -1,28 +1,30 @@
-shopping_list = []
-def add_item(item):
-    shopping_list.append(item)
-    return shopping_list
-
-def remove_item(item):
-    if item in shopping_list:
-        shopping_list.remove(item)
-    return shopping_list
-
-def view_items():
-    return shopping_list
-def main(menu):
+def display_menu():
+    print("Shopping List Manager")
+    print("1. Add Item")
+    print("2. Remove Item")
+    print("3. View List")
+    print("4. Exit")
+def main():
+    shopping_list = []
     while True:
-        if menu == 'add':
+        display_menu()
+        choice = input("Enter your choice: ")
+        if choice == '1':
             item = input("Enter the item name: ")
             shopping_list.append(item)
-        elif menu == 'remove':
+        elif choice == '2':
             item = input("Enter the item name: ")
             if item in shopping_list:
                 shopping_list.remove(item)
             else:
                 print(f"{item} not found in the shopping list.")
-        elif menu == 'view':
+        elif choice == '3':
             for idx, item in enumerate(shopping_list, start=1):
                 print(f"{idx}. {item}")
+        elif choice == '4':
+            print("Exiting the program.")
+            break
         else:
-            print("Invalid menu option. Please choose 'add', 'remove', or 'view'.")
+            print("Invalid choice. Please try again")
+if __name__ == "__main__":
+    main()            
