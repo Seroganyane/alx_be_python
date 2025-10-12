@@ -10,7 +10,7 @@ class Calculator:
     @classmethod
     def multiply(cls, a, b):
         """Returns the product of two numbers and prints the class attribute."""
-        print(f"Calculation Type: {cls.calculation_type}")
+        print(f"Calculation type: {cls.calculation_type}")
         return a * b
 
 
@@ -18,8 +18,8 @@ class Calculator:
 if __name__ == "__main__":
     # Using the static method
     sum_result = Calculator.add(10, 5)
-    print(f"Sum: {sum_result}")
+    print(f"The sum is: {sum_result}")
 
     # Using the class method
     product_result = Calculator.multiply(10, 5)
-    print(f"Product: {product_result}")
+    print(f"The product is: {product_result}")
